@@ -12,7 +12,6 @@ def number_of_routes(x_grid, y_grid):
 	Using matrix form
 	'''
 	# grid = [[0 for i in range(x_grid + 1)] for j in range(y_grid + 1)]
-	#
 	# for i in range(x_grid + 1):
 	# 	for j in range(y_grid + 1):
 	# 		if i == 0 or j == 0:

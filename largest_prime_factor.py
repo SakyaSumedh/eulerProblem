@@ -23,5 +23,8 @@ def largest_prime_factor(n):
 	
 	return int(largest)
 
+import time
+start = time.time()
 number = 600851475143
 print(largest_prime_factor(number))
+print(time.time() - start)

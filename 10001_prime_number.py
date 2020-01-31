@@ -10,8 +10,9 @@ number = 10001
 prime_list = [2]
 
 def check_prime(prim_list, value):
+	sqrt_value = sqrt(value)
 	for prime in prim_list:
-		if prime > sqrt(value):
+		if prime > sqrt_value:
 			break
 		if value % prime == 0:
 			return False

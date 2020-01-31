@@ -1,3 +1,9 @@
+'''
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+'''
+
 def gcd(a,b):
     """Compute the greatest common divisor of a and b"""
     while b > 0:

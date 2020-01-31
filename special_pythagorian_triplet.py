@@ -11,8 +11,9 @@ Find the product abc.
 from math import sqrt
 
 def pythagorean_triplet(sum):
-	for a in range(1, sum // 2 - 1):
-		for b in range(a, sum // 2):
+	quotient = sum // 2
+	for a in range(1, quotient - 1):
+		for b in range(a, quotient):
 			c = sqrt(a ** 2 + b ** 2)
 			if c % 1 == 0 and a + b + c == sum:
 				print(a, b, int(c))
