@@ -7,15 +7,11 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 
 def largest_palindrome_product(n):
-	lower_limit = '1'
-	upper_limit = '9'
 	
-	for i in range(1, n):
-		lower_limit = lower_limit + '0'
-		upper_limit = upper_limit + '9'
-	
-	lower_limit = int(lower_limit)
+	lower_limit = '1' + '0'*(n-1)
+	upper_limit = '9'*n
 
+	lower_limit = int(lower_limit)
 	max_palindrome = 1
 	for i in range(int(upper_limit), lower_limit, -1):
 		for j in range(i, lower_limit, -1):

@@ -4,7 +4,7 @@
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 '''
 
-def gcd(a,b):
+def gcd(a, b):
     """Compute the greatest common divisor of a and b"""
     while b > 0:
         a, b = b, a % b
